@@ -37,7 +37,7 @@ body {
 }
 /******************/
 /*General Components*/
-
+.btn,
 .btn:link,
 .btn:visited {
   display: inline-block;
@@ -47,6 +47,9 @@ body {
   padding: 1.6rem 3.2rem;
   border-radius: 8px;
   transition: all 0.3s;
+  border: none;
+  cursor: pointer;
+  font-family: inherit;
 }
 .btn--full:link,
 .btn--full:visited {
@@ -62,6 +65,16 @@ body {
 }
 .btn--outline:link,
 .btn--outline:visited {
+  background-color: #fff;
+  color: #555;
+}
+.btn--form {
+  background-color: #45260e;
+  color: #fdf2e9;
+  align-self: end;
+  padding: 1.2rem;
+}
+.btn--form:hover {
   background-color: #fff;
   color: #555;
 }
@@ -172,5 +185,9 @@ strong {
   display: flex;
   align-items: center;
   gap: 1.6rem;
+}
+*:focus {
+  outline: none;
+  box-shadow: 0 0 0 0.8rem rgba(230, 126, 34, 0.5);
 }
 /******************/
